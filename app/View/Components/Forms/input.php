@@ -35,4 +35,11 @@ class input extends Component
     {
         return view('components.forms.input');
     }
+    private function validated_type($type){
+        $types = ['text','number','file','checkbox','radio','email','password','textarea'];
+        if(isset($types[$type])){
+            return $types[$type];
+        }
+        return 'text';
+    }
 }

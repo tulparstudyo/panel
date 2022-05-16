@@ -15,6 +15,7 @@
                         @csrf
                         <x-forms.input label="Email" class="error" type="email" name="email" :value="old('email')" required autofocus />
                         <x-forms.input label="Password" type="password" class="error" name="password" required :value="old('password')" />
+                        <x-forms.input label="Remember me" type="checkbox" class="error" name="rememberMe" required :value="old('rememberMe')" />
                         <x-forms.button type="submit" class="danger" value="Login" />
                         <x-item.notice />
                     </form>

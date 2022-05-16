@@ -18,10 +18,12 @@
                         <x-forms.input label="Email" class="error" type="email" name="email" :value="old('email')" required autofocus />
                         <x-forms.input label="Password" type="password" class="error" name="password" required :value="old('password')" />
                         <x-forms.input label="Confirm Password" type="password" class="error" name="password_confirmation" required :value="old('password_confirmation')" />
-                        <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                            {{ __('Already registered?') }}
-                        </a>
                         <x-forms.button type="submit" class="danger" value="Register" />
+                        <p class="mt-4 text-sm text-center">
+                            <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
+                                {{ __('Already registered?') }}
+                            </a>
+                        </p>
                         <x-item.notice />
                     </form>
                 </div>
