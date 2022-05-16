@@ -15,13 +15,13 @@ class cardbox extends Component
     public $title;
     public $description;
     public $icon;
-    public $json;
-    public function __construct($style, $title, $description, $json, $icon)
+    public $list;
+    public function __construct($style, $title, $description, $list, $icon)
     {
         $this->style = $style;
         $this->title = $title;
         $this->description = $description;
-        $this->json = $json;
+        $this->list = $list;
         $this->icon = $icon;
     }
 

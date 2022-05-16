@@ -1,6 +1,5 @@
 <?php
 $id = uniqid();
-$list = json_decode($json, 1);
 $type = $type??'bar';
 ?>
 <div class="col-lg-4 col-md-6 mt-4 mb-4">
